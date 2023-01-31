@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Jocasmen94/wordpress-argo-test1
     targetRevision: HEAD
-    path: wordpre-mysql-phpmysql-mysql-deployments
+    path: wordpress-argo-test1
   destination: 
     server: https://kubernetes.default.svc
     namespace: argocd-wordpress-mysql
