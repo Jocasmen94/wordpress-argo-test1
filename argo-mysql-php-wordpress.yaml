@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wordpress-argo-application
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Jocasmen94/wordpress-argo-test1
+    targetRevision: HEAD
+    path: wordpre-mysql-phpmysql-mysql-deployments
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: argocd-wordpress-mysql
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
