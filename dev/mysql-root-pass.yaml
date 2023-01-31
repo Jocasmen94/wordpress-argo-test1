@@ -1,7 +1,6 @@
-#command: kubectl create secret generic mysql-root-pass  --from-literal=password=rambabu --dry-run=client -o yaml > mysql-root-pass.yaml
 apiVersion: v1
 data:
-  password: Atento.2023*
+  password: QXRlbnRvLjIwMjMq
 kind: Secret
 metadata:
   creationTimestamp: null

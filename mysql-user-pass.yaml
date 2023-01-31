@@ -1,8 +1,0 @@
-apiVersion: v1
-data:
-  password: QXRlbnRvLjIwMjMq
-  username: am9jYXNtZW4=
-kind: Secret
-metadata:
-  creationTimestamp: null
-  name: mysql-user-pass

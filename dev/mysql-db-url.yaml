@@ -1,7 +1,6 @@
-#command: kubectl create secret generic mysql-db-url --from-literal=database=krishna --dry-run=client -o yaml > mysql-db-url.yaml
 apiVersion: v1
 data:
-  database: jocasmen
+  database: am9jYXNtZW4=
 kind: Secret
 metadata:
   creationTimestamp: null
